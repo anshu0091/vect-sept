@@ -15,13 +15,27 @@ function App() {
     <div className="min-h-screen bg-slate-950">
       <Header />
       <Hero />
-      <Vision />
-      <Technology />
-      <AIAssetManager />
-      <Market />
-      <ExecutiveStructure />
-      <Roadmap />
-      <Contact />
+      <article id="vision">
+        <Vision />
+      </article>
+      <article id="technology">
+        <Technology />
+      </article>
+      <article id="ai-asset-manager">
+        <AIAssetManager />
+      </article>
+      <article id="market">
+        <Market />
+      </article>
+      <article id="executive-structure">
+        <ExecutiveStructure />
+      </article>
+      <article id="roadmap">
+        <Roadmap />
+      </article>
+      <article id="contact">
+        <Contact />
+      </article>
       <Footer />
     </div>
   );

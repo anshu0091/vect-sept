@@ -45,8 +45,11 @@ const Footer = () => {
               <div className="flex items-center space-x-3 mb-6">
                 <img 
                   src="/logo copy.jpg" 
-                  alt="Vectorium Logo" 
+                  alt="Vectorium - Leading crypto energy solutions company" 
                   className="h-12 w-12 rounded-full border-2 border-amber-400"
+                  width="48"
+                  height="48"
+                  loading="lazy"
                 />
                 <div className="text-2xl font-bold bg-gradient-to-r from-amber-400 to-blue-400 bg-clip-text text-transparent">
                   VECTORIUM
