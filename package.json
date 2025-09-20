@@ -11,9 +11,12 @@
     "build:prod": "vite build --mode production",
     "deploy:check": "npm run build && npm run preview",
     "deploy:vercel": "vercel --prod",
+    "deploy:vercel:auto": "deploy-vercel.bat",
     "deploy:netlify": "netlify deploy --prod --dir=dist",
     "update-ga": "node update-ga.js",
-    "setup:ga": "echo 'Run: npm run update-ga YOUR_GA_TRACKING_ID'"
+    "setup:ga": "echo 'Run: npm run update-ga YOUR_GA_TRACKING_ID'",
+    "clean": "if exist dist rmdir /s /q dist && if exist .vercel rmdir /s /q .vercel",
+    "rebuild": "npm run clean && npm run build"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.57.4",
